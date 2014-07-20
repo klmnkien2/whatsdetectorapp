@@ -1,0 +1,17 @@
+<resources>
+
+   <dimen name="button_text_size">18dip</dimen>
+    <dimen name="list_image_size">90dip</dimen>
+    <dimen name="list_min_size">100dip</dimen>
+    <dimen name="list_name_text_size">22dip</dimen>
+    <dimen name="list_sub_text_size">18dip</dimen>
+    
+    <dimen name="list_sub_text_size_small">15dip</dimen>
+    
+    <dimen name="small_text_size">12dip</dimen>
+    <dimen name="link_collapse_text_size">18dip</dimen>
+    <dimen name="link_collapse_pad_top">9dip</dimen>
+    <dimen name="link_collapse_text_margin">12dip</dimen> <!-- size / 2 + margin -->
+
+    <dimen name="sliding_tab_height">75dip</dimen>
+</resources>

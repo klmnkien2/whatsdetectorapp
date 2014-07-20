@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myapp="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/gallery_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dip"
+    android:background="@drawable/back_repeat" >
+
+    <ImageView
+        android:id="@+id/button_back"
+        android:layout_width="50dip"
+        android:layout_height="50dip"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dip"
+        android:src="@drawable/back_icon" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_back"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select network data type. It should be like your system config. Dont change if you are not sure"
+            android:textColor="#00FF00"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/check1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Wifi and Mobile"
+            android:textColor="#00FF00"
+            android:textSize="15sp" />
+
+        <CheckBox
+            android:id="@+id/check2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wifi only"
+            android:textColor="#00FF00"
+            android:textSize="15sp" />
+
+        <CheckBox
+            android:id="@+id/check3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mobile only"
+            android:textColor="#00FF00"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        myapp:adSize="BANNER"
+        myapp:adUnitId="ca-app-pub-1437033819551815/3262300284" />
+
+</RelativeLayout>
